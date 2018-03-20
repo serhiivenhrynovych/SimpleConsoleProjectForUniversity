@@ -2,7 +2,9 @@
 Simple java project with the console interface for university, which consist of
 departments and lectors. The lectors could work in more than one department. A lector could
 have one of degree (assistant,associate professor,professor).
+
 All data is stored in relational database.
+
 The app implemented such commands:
 1.Who is head of department {department_name}
 Answer: Head of {department_name} department is {head_of_department_name}
