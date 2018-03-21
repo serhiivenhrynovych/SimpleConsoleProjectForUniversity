@@ -48,7 +48,7 @@ public class JDBCLectorDAO {
     }
 
     public Double avgSalary(String departmentName){
-        String sql = "SELECT CAST(AVG (LEC.SALARY) AS DECIMAL (12,2)) FROM LECTOR LEC JOIN DEPARTMENT DEP " + "ON LEC.DEPARTMENT_ID = DEP.ID  WHERE DEP.NAME = ? GROUP BY LEC.SALARY";
+        String sql = "SELECT CAST(AVG (LEC.SALARY) AS DECIMAL (12,2)) FROM LECTOR LEC JOIN DEPARTMENT DEP " + "ON LEC.DEPARTMENT_ID = DEP.ID  WHERE DEP.NAME = ?";
         return jdbcTemplate.queryForObject(sql, new Object[]{departmentName}, Double.class);
     }
 
